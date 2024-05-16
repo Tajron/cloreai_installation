@@ -8,7 +8,7 @@ handle_error() {
 
 # Command 1: Update NVIDIA drivers using hive-replace
 echo "Updating NVIDIA drivers..."
-hive-replace -y --stable nvidia-driver-update || handle_error "Failed to update NVIDIA drivers"
+nvidia-driver-update || handle_error "Failed to update NVIDIA drivers"
 
 # Command 2: Clone the Git repository
 echo "Cloning Git repository..."
